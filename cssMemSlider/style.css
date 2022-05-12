@@ -1,0 +1,55 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #281C2D;
+}
+
+.slider {
+    align-self: center;
+    background-color: #8155BA;
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2%;
+}
+
+p {
+    font-size: 2em;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+img {
+
+    border-radius: 2%;
+}
+
+input {
+    /*default hide*/
+    appearance: none;
+    background-color: #BEAFC2;
+    margin: 0;
+    font: inherit;
+
+    color: #281C2D;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.15em solid #281C2D;
+    border-radius: 50%;
+}
+
+.buttons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}

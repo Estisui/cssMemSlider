@@ -10,7 +10,7 @@ body {
 .slider {
     align-self: center;
     background-color: #8155BA;
-    height: 60vh;
+    height: 65vh;
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -61,6 +61,8 @@ input {
 }
 
 .caption {
+    display: flex;
+    align-items: center;
     font-size: 2em;
     width: 25%;
     margin: 0;
@@ -109,4 +111,24 @@ label {
 #meme4:checked ~ div > div > div > .first
 , #meme4:checked ~ div > .first{
     margin-left: -75%;
+}
+
+@media (max-width: 767px) {
+    .slider {
+        justify-content: space-evenly;
+        width: 80vw;
+    }
+    .caption_buttons {
+        flex-direction: column-reverse;
+    }
+    img {
+        width: 65vw;
+        height: 65vw;
+    }
+    .buttons {
+        width: 100%;
+    }
+    .captions-place {
+        width: 100%;
+    }
 }

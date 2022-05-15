@@ -11,7 +11,7 @@ body {
     align-self: center;
     background-color: #8155BA;
     height: 60vh;
-    width: 30vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -20,23 +20,41 @@ body {
     overflow: hidden;
 }
 
+.captions-place {
+    width: 50%;
+    overflow: hidden;
+}
+
+.caption_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+/*slides*/
+
+input {
+    display: none;
+}
+
 .slides {
     width: 400%;
     display: flex;
     align-self: flex-start;
 }
 
-/*slide*/
-
-input {
-    display: none;
+.captions {
+    display: flex;
+    width: 400%;
+    overflow: hidden;
 }
+
+/*slide*/
 
 .slide {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     border-radius: 2%;
     width: 25%;
     transition: 0.4s ease;
@@ -44,16 +62,17 @@ input {
 
 .caption {
     font-size: 2em;
-}
-
-.image {
-    display: flex;
-    justify-content: center;
-    width: 80%;
+    width: 25%;
+    margin: 0;
+    transition: 0.4s ease;
 }
 
 img {
     border-radius: 2%;
+}
+
+p {
+    margin: 0;
 }
 
 /*navigation*/
@@ -72,18 +91,22 @@ label {
     justify-content: space-between;
 }
 
-#meme1:checked ~ .first{
+#meme1:checked ~ div > div > div > .first
+, #meme1:checked ~ div > .first{
     margin-left: 0;
 }
 
-#meme2:checked ~ .first{
+#meme2:checked ~ div > div > div > .first
+, #meme2:checked ~ div > .first{
     margin-left: -25%;
 }
 
-#meme3:checked ~ .first{
+#meme3:checked ~ div > div > div > .first
+, #meme3:checked ~ div > .first{
     margin-left: -50%;
 }
 
-#meme4:checked ~ .first{
+#meme4:checked ~ div > div > div > .first
+, #meme4:checked ~ div > .first{
     margin-left: -75%;
 }

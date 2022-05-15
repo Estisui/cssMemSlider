@@ -9,15 +9,42 @@
 </head>
 <body>
     <div class="slider">
-        <div class="image">
-            <img src="/cssMemSlider/memes/meme1.jpg" width="300" height="300">
+        <div class="slides">
+            <input type="radio" name="meme" id="meme1" checked>
+            <input type="radio" name="meme" id="meme2">
+            <input type="radio" name="meme" id="meme3">
+            <input type="radio" name="meme" id="meme4">
+            <div class="slide first">
+                <div class="image">
+                    <img src="/cssMemSlider/memes/meme1.jpg" width="300" height="300">
+                </div>
+                <p class="caption">Люблю школу без буквы ш</p>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <img src="/cssMemSlider/memes/meme1.jpg" width="300" height="300">
+                </div>
+                <p class="caption">Люблю школу без буквы ш</p>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <img src="/cssMemSlider/memes/meme1.jpg" width="300" height="300">
+                </div>
+                <p class="caption">Люблю школу без буквы ш</p>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <img src="/cssMemSlider/memes/meme1.jpg" width="300" height="300">
+                </div>
+                <p class="caption">Люблю школу без буквы ш</p>
+            </div>
         </div>
-        <p>Люблю школу без буквы ш</p>
+
         <div class="buttons">
-            <input type="radio" name="meme1" id="meme1">
-            <input type="radio" name="meme2" id="meme2">
-            <input type="radio" name="meme3" id="meme3">
-            <input type="radio" name="meme4" id="meme4">
+            <label for="meme1" class="button"></label>
+            <label for="meme2" class="button"></label>
+            <label for="meme3" class="button"></label>
+            <label for="meme4" class="button"></label>
         </div>
     </div>
 </body>

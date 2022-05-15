@@ -17,9 +17,32 @@ body {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 2%;
+    overflow: hidden;
 }
 
-p {
+.slides {
+    width: 400%;
+    display: flex;
+    align-self: flex-start;
+}
+
+/*slide*/
+
+input {
+    display: none;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2%;
+    width: 25%;
+    transition: 0.4s ease;
+}
+
+.caption {
     font-size: 2em;
 }
 
@@ -30,26 +53,37 @@ p {
 }
 
 img {
-
     border-radius: 2%;
 }
 
-input {
-    /*default hide*/
-    appearance: none;
-    background-color: #BEAFC2;
-    margin: 0;
-    font: inherit;
+/*navigation*/
 
-    color: #281C2D;
+label {
     width: 1.5em;
     height: 1.5em;
     border: 0.15em solid #281C2D;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .buttons {
     width: 40%;
     display: flex;
     justify-content: space-between;
+}
+
+#meme1:checked ~ .first{
+    margin-left: 0;
+}
+
+#meme2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#meme3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#meme4:checked ~ .first{
+    margin-left: -75%;
 }

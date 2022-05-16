@@ -29,7 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 
 /*slides*/
@@ -82,9 +82,26 @@ p {
 label {
     width: 1.5em;
     height: 1.5em;
-    border: 0.15em solid #281C2D;
+    border: 0.5rem solid transparent;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: inset 0 0 0 0.1rem black;
+}
+
+label:hover {
+    box-shadow: inset 0 0 0 0.1rem #BEAFC2;
+}
+
+label:active {
+    box-shadow: inset 0 0 0 0.1rem #281C2D;
+}
+
+#meme1:checked ~ div > div > .meme1,
+#meme2:checked ~ div > div > .meme2,
+#meme3:checked ~ div > div > .meme3,
+#meme4:checked ~ div > div > .meme4 {
+    background-clip: content-box;
+    background-color: #BEAFC2;
 }
 
 .buttons {

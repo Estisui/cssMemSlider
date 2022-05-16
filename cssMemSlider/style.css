@@ -1,0 +1,161 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #281C2D;
+}
+
+.slider {
+    align-self: center;
+    background-color: #8155BA;
+    height: 65vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.captions-place {
+    width: 50%;
+    overflow: hidden;
+}
+
+.caption_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/*slides*/
+
+input {
+    display: none;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+    align-self: flex-start;
+}
+
+.captions {
+    display: flex;
+    width: 400%;
+    overflow: hidden;
+}
+
+/*slide*/
+
+.slide {
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
+    width: 25%;
+    transition: 0.4s ease;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    width: 25%;
+    margin: 0;
+    transition: 0.4s ease;
+}
+
+img {
+    border-radius: 2%;
+}
+
+p {
+    margin: 0;
+}
+
+/*navigation*/
+
+label {
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.5rem solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0.1rem #281C2D;
+}
+
+label:hover {
+    box-shadow: inset 0 0 0 0.1rem #BEAFC2;
+}
+
+label:active {
+    box-shadow: inset 0 0 0 0.1rem #281C2D;
+}
+
+#meme1:checked ~ div > div > .meme1,
+#meme2:checked ~ div > div > .meme2,
+#meme3:checked ~ div > div > .meme3,
+#meme4:checked ~ div > div > .meme4 {
+    background-clip: content-box;
+    background-color: #BEAFC2;
+}
+
+.buttons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#meme1:checked ~ div > div > div > .first
+, #meme1:checked ~ div > .first{
+    margin-left: 0;
+}
+
+#meme2:checked ~ div > div > div > .first
+, #meme2:checked ~ div > .first{
+    margin-left: -25%;
+}
+
+#meme3:checked ~ div > div > div > .first
+, #meme3:checked ~ div > .first{
+    margin-left: -50%;
+}
+
+#meme4:checked ~ div > div > div > .first
+, #meme4:checked ~ div > .first{
+    margin-left: -75%;
+}
+
+@media (max-width: 767px) {
+    .slider {
+        justify-content: space-evenly;
+        width: 80vw;
+    }
+    .caption_buttons {
+        flex-direction: column-reverse;
+    }
+    img {
+        width: 65vw;
+        height: 65vw;
+    }
+    .buttons {
+        width: 100%;
+    }
+    .captions-place {
+        width: 100%;
+    }
+}
+
+/*description*/
+
+.description {
+    margin-top: 5%;
+    font-size: 1.5em;
+    color: #BEAFC2;
+    text-decoration: none;
+}
